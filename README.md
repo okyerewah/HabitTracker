@@ -1,6 +1,5 @@
 # Habit Tracker
-
-A command-line application built in Python that allows a user to create habits and track them through completions.
+A command-line application that allows a user to create habits and monitor their completion through analytics.
 
 ## Installation
 
