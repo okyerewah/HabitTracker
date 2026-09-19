@@ -44,17 +44,17 @@ Habit Tracker
 
 Select an option by typing its number and pressing Enter.
 
-- **Add habit (1):** enter a name and a periodicity (`daily` or `weekly`) to create a new habit.
+- **Add habit (1):** enter a habit's  name and a periodicity (`daily` or `weekly`) to create a new habit.
 - **Complete a task (2):** enter the ID of the habit you want to check off for today. Completing the same habit twice on the same day only counts once.
 - **Delete habit (3):** remove a habit permanently by its ID.
-- **View all habits / by periodicity (4, 5):** list habits, optionally filtered to `daily` or `weekly`.
+- **View all habits / by periodicity (4, 5):** list habits, optionally filter to `daily` or `weekly`.
 - **View current streaks (6):** shows every habit's current consecutive-period streak.
 - **Longest streak for a habit / across all habits (7, 8):** shows the best streak ever achieved.
 - **Load demo data (9):** loads the 5 predefined habits with 4 weeks of example completions.
 
 ## Running the tests
 
-The test suite uses `pytest` and runs against a temporary, isolated JSON file so it never touches your real `habits.json`:
+The test suite uses `pytest` and runs against a isolated JSON file so it does not affect the persistent storage `habits.json`:
 
 ```bash
 pytest test_habits.py
